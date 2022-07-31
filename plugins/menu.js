@@ -36,30 +36,30 @@ let tags = {
 const defaultMenu = {
   before: `
 Hai, %ucapan %name! 👋
-➪*Waktu:* 
+➪.𝙒𝘼𝙆𝙏𝙐: 
 ➪%wib WIB
 ➪%wita WITA
 ➪%wit WIT
-➪*Hari:* %week
-➪*Tanggal:* %date
-➪*Uptime:* %uptime (%muptime)
+➪𝙃𝘼𝙍𝙄: %week
+➪𝙏𝘼𝙉𝙂𝙂𝘼𝙇: %date
+➪𝙐𝙋𝙏𝙄𝙈𝙀: %uptime (%muptime)
 
-➪𝐌𝐚𝐦𝐩𝐢𝐫 𝐤𝐞 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐨𝐰𝐧𝐞𝐫
+➪𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙾𝚆𝙽𝙴𝚁
 
 https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ
 
-➪𝐆𝐫𝐨𝐮𝐩 𝐛𝐨𝐭 𝐨𝐟𝐟𝐜𝐢𝐚𝐥
+➪𝙶𝚁𝙾𝚄𝙿 𝙾𝚆𝙽𝙴𝚁
 
 https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL
-➪*Limit:* %limit
-➪*Level:* %level
-➪*XP:* %exp
+➪𝙇𝙄𝙈𝙄𝙏: %limit
+➪𝙇𝙀𝙑𝙀𝙇: %level
+➪𝙓𝙋: %exp
 %readmore`.trimStart(),
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
   after: `*Made by ♡*
-*%𝗝𝗮𝗿𝗼𝘁 𝗼𝗳𝗳𝗰* | %version
+*%𝙍𝘼𝙈𝘼 𝗼𝗳𝗳𝗰* | %version
 ${'```%npmdesc```'}
 `,
 }
@@ -164,9 +164,9 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ', 'Website🌟', '', '', [
-      ['Donate🌟', '/donasi'],
-      ['Sewa Bot🌟', '/sewa'],
-      ['Owner🌟', '/owner']
+      ['𝘿𝙊𝙉𝘼𝙎𝙄', '/donasi'],
+      ['𝙎𝙀𝙒𝘼 𝙊𝙒𝙉𝙀𝙍', '/sewa'],
+      ['𝙎𝙄 𝙂𝘼𝙉𝙏𝙀𝙉𝙂', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
