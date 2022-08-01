@@ -15,8 +15,8 @@ handler.before = async function (m) {
     await this.sendButton(m.chat, `
 Hai ${ucapan()} *${username.replace(/@.+/, '')}* 👋
 
-${banned ? `kamu *terbanned* kak 😕\nHubungi: wa.me/${owner[0]}` : 'Ada yang bisa saya bantu?'}
-`.trim(), wm, null, [['Menu', '/menu']], m)
+${banned ? `kamu *terbanned* kak 😕\nHubungi: wa.me/${owner[0]}` : '𝙎𝙖𝙮𝙖 𝙖𝙙𝙖𝙡𝙖𝙝 𝙗𝙤𝙩 𝙮𝙜 𝙙𝙞 𝙠𝙚𝙢𝙗𝙖𝙣𝙜𝙠𝙖𝙣 𝙤𝙡𝙚𝙝 𝙧𝙖𝙢𝙖'}
+`.trim(), wm, null, [['𝙈𝙚𝙣𝙪🎚', '/menu']], m)
     user.pc = new Date * 1
 }
 
