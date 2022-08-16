@@ -164,11 +164,11 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ', 'Website🌟', '', '', [
-      ['𝘿𝙊𝙉𝘼𝙎𝙄💸', '/donasi'],
-      ['𝙎𝙀𝙒𝘼 𝘽𝙊𝙏𝙕🤖', '/sewa'],
-      ['OWNER👤', '/owner']
+      ['𝘿𝙊𝙉𝘼𝙎𝙄 𝙍𝙖𝙢𝙖𝘽𝙤𝙩𝙯💸', '/donasi'],
+      ['𝙎𝙀𝙒𝘼 𝙍𝙖𝙢𝙖𝘽𝙤𝙩𝙯🤖', '/sewa'],
+      [' 𝙊𝙒𝙉𝙀𝙍👤', '/owner']
     ], m)
-    /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
+    /*let url = `https://telegra.ph/file/8bca198bfbe8a2f0e6ecd.jpg`.trim()
     let res = await fetch(url)
     let buffer = await res.buffer()
     let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
